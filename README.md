@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-
 # HotelWebSite
 
-<<<<<<< HEAD
-## [NETLIFY LİNKİ](https://63dbd0102436936547f3b3af--hotelwebsitereact.netlify.app/)
-=======
-
 ## [NETLIFY LİNKİ](https://hotelwebsitereact.netlify.app/)
-
->>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
 
 ## EXAMPLE DATA IN data/hotels.js
 
@@ -45,16 +37,3 @@
     ],
   },
 ```
-
-
-![ScreenShot](Footer.png)
-
- <br />
- <br />
-
-![ScreenShot](hotelDetail.png)
-
- <br />
- <br />
-
-![ScreenShot](hotelList.png)

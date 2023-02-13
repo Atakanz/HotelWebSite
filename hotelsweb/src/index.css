@@ -5,13 +5,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
-<<<<<<< HEAD
   --primary-dark: #bddcec;
   --primary-light: #0a6fb7;
-=======
-  --primary-dark: #c1eaff;
-  --primary-light: #1ca0fe;
->>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
 }
 
 @layer base {
@@ -32,7 +27,6 @@
   }
 }
 
-<<<<<<< HEAD
 .defaultButton {
   @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white;
 }
@@ -43,14 +37,6 @@
 
 .formUnit {
   @apply flex flex-col justify-center items-center;
-=======
-.bookingForm {
-  @apply justify-evenly w-full flex items-center border py-2 min-[280px]:grid min-[250px]:grid-cols-2 min-[280px]:gap-4 md:grid-cols-5;
-}
-
-.formUnit {
-  @apply flex 2xl:flex-row min-[280px]:flex-col  justify-center items-center;
->>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
 }
 
 .formDivider {
@@ -62,7 +48,6 @@
 }
 
 .selectDate {
-<<<<<<< HEAD
   @apply min-[280px]:p-0 md:p-1 border border-orange-600 bg-white;
 }
 
@@ -76,12 +61,4 @@
 
 .minusPlusButtons {
   @apply text-orange-600;
-=======
-  @apply min-[280px]:p-0 md:p-1 border;
 }
-
-.adultChildSelection {
-  @apply flex flex-row items-center justify-center ml-3;
->>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
-}
-

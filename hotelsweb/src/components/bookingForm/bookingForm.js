@@ -38,15 +38,6 @@ const BookingForm = props => {
       <div className="bookingForm">
         <div className="formUnit">
           <div>
-<<<<<<< HEAD
-=======
-            <label className="formDivider">Şehir</label>
-          </div>
-          <select className="selectCity">{cities.map(selectCity)}</select>
-        </div>
-        <div className="formUnit">
-          <div>
->>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
             <label className="formDivider-${props.path}">Giriş Tarihi</label>
           </div>
           <input
@@ -68,7 +59,6 @@ const BookingForm = props => {
           />
         </div>
         <div className="formUnit">
-<<<<<<< HEAD
           <div>
             <label className="formDivider">Şehir</label>
           </div>
@@ -108,29 +98,10 @@ const BookingForm = props => {
               onClick={increaseChild}
               className="minusPlusButtons"
             />
-=======
-          <label className="formDivider">Kişi sayısı</label>
-
-          <div className="adultChildSelection">
-            <Fa.FaMinusSquare onClick={decreaseAdult} />
-            <text className="mr-1">{adult}</text>
-            YETİŞKİN
-            <Fa.FaPlusSquare onClick={increaseAdult} />
-          </div>
-          <div className="adultChildSelection">
-            <Fa.FaMinusSquare onClick={decreaseChild} />
-            <text className="mr-1"> {child}</text>
-            ÇOCUK
-            <Fa.FaPlusSquare onClick={increaseChild} />
->>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
           </div>
         </div>
         <div className="flex min-[280px]:col-span-2 md:col-span-1 justify-center">
-<<<<<<< HEAD
           <button className="defaultButton formButton">
-=======
-          <button className="formButton">
->>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
             {<Fa.FaArrowRight className="sm:mr-2" />}
             Listele
           </button>
