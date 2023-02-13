@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+<<<<<<< HEAD
+  --primary-dark: #bddcec;
+  --primary-light: #0a6fb7;
+=======
+  --primary-dark: #c1eaff;
+  --primary-light: #1ca0fe;
+>>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-[Poppins];
+  }
+
+  li {
+    @apply p-4 text-sm list-none;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+}
+
+<<<<<<< HEAD
+.defaultButton {
+  @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white;
+}
+
+.bookingForm {
+  @apply w-full flex items-center border py-1 max-[768px]:grid max-[768px]:grid-cols-2 max-[768px]:gap-4 md:flex-row md:justify-evenly py-2;
+}
+
+.formUnit {
+  @apply flex flex-col justify-center items-center;
+=======
+.bookingForm {
+  @apply justify-evenly w-full flex items-center border py-2 min-[280px]:grid min-[250px]:grid-cols-2 min-[280px]:gap-4 md:grid-cols-5;
+}
+
+.formUnit {
+  @apply flex 2xl:flex-row min-[280px]:flex-col  justify-center items-center;
+>>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
+}
+
+.formDivider {
+  @apply flex items-center justify-center;
+}
+
+.formButton {
+  @apply flex max-[1030px]:flex-row justify-center items-center text-white rounded-2xl p-4;
+}
+
+.selectDate {
+<<<<<<< HEAD
+  @apply min-[280px]:p-0 md:p-1 border border-orange-600 bg-white;
+}
+
+.adultChildSelection {
+  @apply flex flex-row items-center space-x-2 justify-center w-full;
+}
+
+.selectCity {
+  @apply bg-white border border-orange-600 min-[250px]:p-0 md:p-1;
+}
+
+.minusPlusButtons {
+  @apply text-orange-600;
+=======
+  @apply min-[280px]:p-0 md:p-1 border;
+}
+
+.adultChildSelection {
+  @apply flex flex-row items-center justify-center ml-3;
+>>>>>>> 7bc1e8731ca66b2853a48163f7780f1671179b09
+}
+
