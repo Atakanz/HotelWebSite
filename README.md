@@ -1,6 +1,6 @@
 # HotelWebSite
 
-## [NETLIFY LİNKİ](https://hotelwebsitereact.netlify.app/)
+## [NETLIFY LINK](https://hotelwebsitereact.netlify.app/)
 
 ## EXAMPLE DATA IN data/hotels.js
 
