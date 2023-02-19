@@ -69,35 +69,27 @@ const BookingForm = props => {
 
           <div className="adultChildSelection">
             <div>
-              <Fa.FaMinusSquare
-                onClick={decreaseAdult}
-                className="minusPlusButtons"
-              />
+              <button onClick={decreaseAdult} aria-label="decreaseAdult">
+                <Fa.FaMinusSquare className="minusPlusButtons" />
+              </button>
             </div>
             <text className="mr-1 border border-stone-300 px-1">
-              {adult} YETİŞKİN
+              <text data-testid="adult">{adult}</text> YETİŞKİN
             </text>
-            <div>
-              <Fa.FaPlusSquare
-                onClick={increaseAdult}
-                className="minusPlusButtons"
-              />
-            </div>
+            <button onClick={increaseAdult} aria-label="increaseAdult">
+              <Fa.FaPlusSquare className="minusPlusButtons" />
+            </button>
           </div>
           <div className="adultChildSelection mt-1">
-            <Fa.FaMinusSquare
-              onClick={decreaseChild}
-              className="minusPlusButtons"
-            />
+            <button onClick={decreaseChild} aria-label="decreaseChild">
+              <Fa.FaMinusSquare className="minusPlusButtons" />
+            </button>
             <text className="mr-1 border border-stone-300 px-1">
-              {' '}
-              {child} ÇOCUK
+              <text data-testid="child">{child}</text> ÇOCUK
             </text>
-
-            <Fa.FaPlusSquare
-              onClick={increaseChild}
-              className="minusPlusButtons"
-            />
+            <button onClick={increaseChild} aria-label="increaseChild">
+              <Fa.FaPlusSquare className="minusPlusButtons" />
+            </button>
           </div>
         </div>
         <div className="flex min-[280px]:col-span-2 md:col-span-1 justify-center">
