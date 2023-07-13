@@ -7,11 +7,13 @@ import HotelDetail from './pages/hotelDetail/hotelDetail';
 import HotelList from './pages/hotelList/hotelList.js';
 import Contacts from './pages/contacts/contacts.js';
 import Footer from './components/footer/footer';
+import ScrollToTop from './components/scrollToTop/scrollToTop';
 import './index.css';
 
 const AppLayout = () => (
   <>
     <TopBar />
+    <ScrollToTop />
     <Outlet />
     <Footer />
   </>
@@ -22,19 +24,19 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       {
-        path: '',
+        path: '/',
         element: <Home />,
       },
       {
-        path: 'hotellist',
+        path: '/hotels',
         element: <HotelList />,
       },
       {
-        path: 'hoteldetail',
+        path: '/hotels/:hotelid',
         element: <HotelDetail />,
       },
       {
-        path: 'contacts',
+        path: '/contacts',
         element: <Contacts />,
       },
     ],

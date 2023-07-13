@@ -6,29 +6,36 @@ import * as Fa from 'react-icons/fa';
 const HotelDetail = () => {
   const location = useLocation();
   const {state} = location;
-  const hotel = state.from;
-  const stars = [...Array(hotel.numberOfStars)].map(function (line, i) {
-    return (
-      <div key={i}>
-        <Fa.FaStar size={10} className="text-orange-600" />
-      </div>
-    );
-  });
-  const qualifications = hotel.advantages.map(function (item, i) {
-    return (
-      <div className="my-3 mx-1 flex justify-center">
-        <text className="text-base flex justify-center items-center border border-orange-600 rounded-xl p-2 min-w-full text-center">
-          {item}
-        </text>
-      </div>
-    );
-  });
+  const hotel = state?.from;
+
+  if (!hotel) {
+    // Handle the case when hotel data is not available
+    return null;
+  }
+
+  const stars = [...Array(hotel.numberOfStars)].map((line, i) => (
+    <div key={i}>
+      <Fa.FaStar size={10} className="text-orange-600" />
+    </div>
+  ));
+
+  const qualifications = hotel.advantages.map((item, i) => (
+    <div className="my-3 mx-1 flex justify-center" key={i}>
+      <text className="text-base flex justify-center items-center border border-orange-600 rounded-xl p-2 min-w-full text-center">
+        {item}
+      </text>
+    </div>
+  ));
 
   return (
     <>
       <div className="grid lg:grid-cols-2 p-3 sm:grid-cols-1">
         <div className="rounded-2xl justify-center flex">
-          <img className="bg-cover rounded-2xl" src={hotel.mainPhoto} />
+          <img
+            className="bg-cover rounded-2xl"
+            src={hotel.mainPhoto}
+            alt="Hotel"
+          />
         </div>
         <div className="flex flex-col p-4">
           <text className="font-bold text-2xl mb-2">{hotel.name}</text>
@@ -53,7 +60,7 @@ const HotelDetail = () => {
             </text>
           )}
           <div className="flex justify-center mt-6">
-            <button className=" defaultButton rounded-xl">REZERVASYON</button>
+            <button className="defaultButton rounded-xl">REZERVASYON</button>
           </div>
         </div>
         <div className="mb-8 mt-5 lg:col-span-2">

@@ -5,7 +5,7 @@ const topBarData = [
   },
   {
     title: 'Oteller',
-    path: '/hotellist',
+    path: '/hotels',
   },
   {
     title: 'İletişim',

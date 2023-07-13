@@ -3,14 +3,15 @@ import HotelUnits from '../hotelUnits/hotelUnits';
 import {hotels} from '../../data/hotels';
 
 function HotelListSection() {
-  const hotelLists = hotels.map((hotels, index) => (
-    <li key={index}>
-      <HotelUnits hotel={hotels} />
-    </li>
+  const hotelItems = hotels.map((hotel, index) => (
+    <div key={index} className="col-span-1">
+      <HotelUnits hotel={hotel} />
+    </div>
   ));
+
   return (
-    <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 min-[280px]:grid-col-1 ">
-      {hotelLists}
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      {hotelItems}
     </div>
   );
 }

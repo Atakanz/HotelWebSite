@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import * as Fa from 'react-icons/fa';
 
 const HotelUnits = ({hotel}) => {
@@ -12,7 +12,7 @@ const HotelUnits = ({hotel}) => {
   });
 
   return (
-    <NavLink to="/hotelDetail/" state={{from: hotel}}>
+    <Link to={hotel.id} state={{from: hotel}}>
       <div className="h-96 bg-sky-100 rounded-2xl">
         <div
           className="h-60 w-full rounded-t-2xl bg-cover"
@@ -36,7 +36,7 @@ const HotelUnits = ({hotel}) => {
           </text>
         </div>
       </div>
-    </NavLink>
+    </Link>
   );
 };
 
