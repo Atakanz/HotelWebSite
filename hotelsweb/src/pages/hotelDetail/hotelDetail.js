@@ -9,7 +9,6 @@ const HotelDetail = () => {
   const hotel = state?.from;
 
   if (!hotel) {
-    // Handle the case when hotel data is not available
     return null;
   }
 

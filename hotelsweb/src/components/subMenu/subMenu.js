@@ -5,8 +5,9 @@ const SubMenu = ({item}) => {
   return (
     <>
       <NavLink to={item.path}>
-        <div className="sidebar-title">
+        <div className="sidebar-title relative">
           <p className="text-white">{item.title}</p>
+          <div className="hover-animation"></div>
         </div>
       </NavLink>
     </>

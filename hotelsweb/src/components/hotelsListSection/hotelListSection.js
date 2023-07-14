@@ -10,7 +10,7 @@ function HotelListSection() {
   ));
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-4">
       {hotelItems}
     </div>
   );
