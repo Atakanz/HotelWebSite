@@ -6,22 +6,22 @@ function Footer() {
     <footer className="flex bg-sky-600 w-full grid min-[280px]:grid-cols-2 md:grid-cols-3 py-8 items-center">
       <div className="flex flex-col items-center m-auto justify-center">
         <div className="flex flex-row items-center justify-center">
-          <Fa.FaPhone className="text-orange-600 mr-3" size={25} />
+          <Fa.FaPhone className="text-orange-500 mr-3" size={25} />
           <p className="text-white">444AAAA</p>
         </div>
         <div className="flex flex-row mt-3 items-center">
-          <Fa.FaMailBulk className="text-orange-600 mr-3" size={25} />
+          <Fa.FaMailBulk className="text-orange-500 mr-3" size={25} />
           <p className="text-white">info@holiday.com</p>
         </div>
         <div className="flex flex-row justify-between mt-3">
           <div>
-            <Fa.FaInstagram className="text-orange-600" size={25} />
+            <Fa.FaInstagram className="text-orange-500" size={25} />
           </div>
           <div>
-            <Fa.FaLinkedin className="text-orange-600 mx-3" size={25} />
+            <Fa.FaLinkedin className="text-orange-500 mx-3" size={25} />
           </div>
           <div>
-            <Fa.FaTwitter className="text-orange-600" size={25} />
+            <Fa.FaTwitter className="text-orange-500" size={25} />
           </div>
         </div>
       </div>
