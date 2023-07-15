@@ -30,7 +30,7 @@ const TopBar = () => {
   }, []);
 
   return (
-    <div className="md:h-24 bg-sky-800 flex min-[200px]:items-center md:overflow-hidden relative">
+    <div className="md:h-36 bg-sky-600 flex min-[200px]:items-center md:overflow-hidden relative">
       <div className="flex w-full pl-2 items-center">
         <div className="flex justify-between items-center w-full px-3">
           <button
@@ -70,7 +70,7 @@ const TopBar = () => {
             <div
               className={`${
                 !isMenuOpen && isMenu ? 'opacity-0 -translate-y-6' : ''
-              } duration-300 mx-auto w-full top-[96px] absolute bottom-0 left-0 justify-center`}>
+              } duration-300 mx-auto w-full top-[140px] absolute bottom-0 left-0 justify-center`}>
               {topBarData.map((item, index) => (
                 <SubMenu item={item} key={index} open={isMenuOpen} />
               ))}
@@ -79,7 +79,7 @@ const TopBar = () => {
           <img
             src={Logo}
             alt="Brand Logo"
-            className="w-12 h-24 md:w-16 md:h-32"
+            className="w-[70px] h-[140px] md:w-[100px]  md:h-[200px]"
           />
         </div>
         <div className="hidden md:flex w-full md:justify-evenly">

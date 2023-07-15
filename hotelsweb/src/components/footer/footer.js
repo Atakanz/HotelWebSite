@@ -3,7 +3,7 @@ import * as Fa from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="flex bg-sky-800 w-full grid min-[280px]:grid-cols-2 md:grid-cols-3 py-8 items-center">
+    <footer className="flex bg-sky-600 w-full grid min-[280px]:grid-cols-2 md:grid-cols-3 py-8 items-center">
       <div className="flex flex-col items-center m-auto justify-center">
         <div className="flex flex-row items-center justify-center">
           <Fa.FaPhone className="text-orange-600 mr-3" size={25} />
