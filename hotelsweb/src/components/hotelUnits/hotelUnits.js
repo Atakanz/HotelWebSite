@@ -13,7 +13,7 @@ const HotelUnits = ({hotel}) => {
 
   return (
     <Link to={hotel.id} state={{from: hotel}}>
-      <div className="h-96 bg-sky-100 rounded-2xl">
+      <div className="h-96 bg-blue-50 rounded-2xl">
         <div
           className="h-60 w-full rounded-t-2xl bg-cover"
           style={{
@@ -26,7 +26,7 @@ const HotelUnits = ({hotel}) => {
           <text className="text-base">{hotel.city}</text>
           <text>{hotel.advantages[0]}</text>
           <text
-            className={`font-bold  ${
+            className={`font-bold ${
               hotel.discounted ? 'line-through text-sm' : 'text-lg'
             }`}>
             {hotel.price}

@@ -30,7 +30,7 @@ const TopBar = () => {
   }, []);
 
   return (
-    <div className="md:h-24 bg-sky-800 flex  min-[200px]:items-center overflow-hidden">
+    <div className="md:h-24 bg-sky-800 flex min-[200px]:items-center md:overflow-hidden relative">
       <div className="flex w-full pl-2 items-center">
         <div className="flex justify-between items-center w-full px-3">
           <button
@@ -69,10 +69,8 @@ const TopBar = () => {
           {isMenu && (
             <div
               className={`${
-                !isMenuOpen && isMenu
-                  ? 'opacity-0 translate-y-3 bg-orange-600'
-                  : ''
-              } whitespace-pre duration-200 mx-auto`}>
+                !isMenuOpen && isMenu ? 'opacity-0 -translate-y-6' : ''
+              } duration-300 mx-auto w-full top-[96px] absolute bottom-0 left-0 justify-center`}>
               {topBarData.map((item, index) => (
                 <SubMenu item={item} key={index} open={isMenuOpen} />
               ))}
