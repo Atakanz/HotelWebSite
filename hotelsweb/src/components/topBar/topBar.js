@@ -1,19 +1,38 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import topBarData from './topBarData';
 import SubMenu from '../subMenu/subMenu';
 import Logo from '../../assets/brand-logo.png';
 
 const TopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenu, setIsMenu] = useState(true);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleResize = () => {
+    if (window.innerWidth >= 768) {
+      setIsMenu(false);
+    }
+    if (window.innerWidth <= 768) {
+      setIsMenu(true);
+    }
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <div className="md:h-24 bg-sky-800 flex md:items-center min-[280px]:items-center">
-      <div className="flex items-center justify-between w-full">
-        <div className="flex items-center justify-between w-full px-2">
+    <div className="md:h-24 bg-sky-800 flex  min-[200px]:items-center overflow-hidden">
+      <div className="flex w-full pl-2 items-center">
+        <div className="flex justify-between items-center w-full px-3">
           <button
             className="text-white focus:outline-none md:hidden"
             onClick={toggleMenu}>
@@ -47,22 +66,27 @@ const TopBar = () => {
               </svg>
             )}
           </button>
-          {isMenuOpen && (
-            <div className="md:hidden">
+          {isMenu && (
+            <div
+              className={`${
+                !isMenuOpen && isMenu
+                  ? 'opacity-0 translate-y-3 bg-orange-600'
+                  : ''
+              } whitespace-pre duration-200 mx-auto`}>
               {topBarData.map((item, index) => (
-                <SubMenu item={item} key={index} />
+                <SubMenu item={item} key={index} open={isMenuOpen} />
               ))}
             </div>
           )}
           <img
             src={Logo}
             alt="Brand Logo"
-            className="w-24 h-24 md:w-36 md:h-36"
+            className="w-12 h-24 md:w-16 md:h-32"
           />
         </div>
         <div className="hidden md:flex w-full md:justify-evenly">
           {topBarData.map((item, index) => (
-            <SubMenu item={item} key={index} />
+            <SubMenu item={item} key={index} open={isMenuOpen} />
           ))}
         </div>
       </div>

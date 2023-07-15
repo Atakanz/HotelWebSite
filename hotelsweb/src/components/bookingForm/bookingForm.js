@@ -73,7 +73,7 @@ const BookingForm = props => {
                 <Fa.FaMinusSquare className="minusPlusButtons" />
               </button>
             </div>
-            <text className="mr-1 border border-stone-300 px-1">
+            <text className="mr-1 border border-stone-300 w-[100px] text-center">
               <text data-testid="adult">{adult}</text> YETİŞKİN
             </text>
             <button onClick={increaseAdult} aria-label="increaseAdult">
@@ -84,7 +84,7 @@ const BookingForm = props => {
             <button onClick={decreaseChild} aria-label="decreaseChild">
               <Fa.FaMinusSquare className="minusPlusButtons" />
             </button>
-            <text className="mr-1 border border-stone-300 px-1">
+            <text className="mr-1 border border-stone-300 w-[100px] text-center">
               <text data-testid="child">{child}</text> ÇOCUK
             </text>
             <button onClick={increaseChild} aria-label="increaseChild">
