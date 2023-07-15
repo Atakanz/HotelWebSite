@@ -30,7 +30,10 @@ const TopBar = () => {
   }, []);
 
   return (
-    <div className="md:h-36 bg-sky-600 flex min-[200px]:items-center md:overflow-hidden relative">
+    <div
+      className={`${
+        !isMenuOpen ? 'overflow-hidden' : ''
+      } md:py-4 bg-sky-600 flex md:overflow-hidden relative min-[250px]:py-2`}>
       <div className="flex w-full pl-2 items-center">
         <div className="flex justify-between items-center w-full px-3">
           <button
@@ -69,8 +72,8 @@ const TopBar = () => {
           {isMenu && (
             <div
               className={`${
-                !isMenuOpen && isMenu ? 'opacity-0 -translate-y-6' : ''
-              } duration-300 mx-auto w-full top-[140px] absolute bottom-0 left-0 justify-center`}>
+                !isMenuOpen && isMenu ? 'opacity-0' : ''
+              } duration-200 mx-auto w-full top-[96px] absolute bottom-0 left-0 justify-center transition-all ease-out`}>
               {topBarData.map((item, index) => (
                 <SubMenu item={item} key={index} open={isMenuOpen} />
               ))}
@@ -79,7 +82,7 @@ const TopBar = () => {
           <img
             src={Logo}
             alt="Brand Logo"
-            className="w-[70px] h-[140px] md:w-[100px]  md:h-[200px]"
+            className="w-[70px] h-[80px] md:w-[96px] md:h-[106px] ml-48"
           />
         </div>
         <div className="hidden md:flex w-full md:justify-evenly">
