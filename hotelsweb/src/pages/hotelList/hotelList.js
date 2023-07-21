@@ -7,7 +7,7 @@ const HotelList = () => {
     <>
       <div>
         <div
-          className="w-full h-[400px] bg-cover min-h-[250px] hidden md:block"
+          className="w-full min-[200]:h-[400px] h-[400px] bg-cover min-h-[150px]"
           style={{
             backgroundImage: `url(${require('../../assets/contents/happyFamily.jpg')})`,
           }}></div>
