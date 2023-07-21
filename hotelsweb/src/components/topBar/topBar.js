@@ -87,10 +87,10 @@ const TopBar = () => {
       </div>
       <ul
         className={`${
-          isMenuOpen ? 'h-60' : 'h-0 overflow-hidden opacity-0'
+          isMenuOpen ? 'h-40' : 'h-0 overflow-hidden opacity-0'
         } transition-all ease-in-out duration-300 w-full`}>
         {topBarData.map((item, index) => (
-          <li className="md:ml-8 md:my-0 my-7">
+          <li className="md:ml-8 md:my-0 border border-stone-50 bg-blue-50">
             <a
               href={item.path}
               className="text-gray-800 hover:text-gray-400 duration-500">
