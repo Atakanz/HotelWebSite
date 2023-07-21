@@ -48,7 +48,7 @@
 }
 
 .selectDate {
-  @apply min-[280px]:p-0 md:p-1 border border-orange-600 bg-white;
+  @apply min-[280px]:p-0 md:p-1 border border-stone-300 bg-white;
 }
 
 .adultChildSelection {
@@ -56,7 +56,7 @@
 }
 
 .selectCity {
-  @apply bg-white border border-orange-600 min-[250px]:p-0 md:p-1;
+  @apply bg-white border border-stone-300 min-[250px]:p-0 md:p-1;
 }
 
 .minusPlusButtons {
