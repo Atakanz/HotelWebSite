@@ -10,6 +10,7 @@ The project utilizes the following technologies and libraries:
 
 - Testing Library: Used for testing components and ensuring their functionality.
 - Tailwind CSS: Used for styling the components and creating a visually appealing design.
+- React Browser Detector: Used for components which should be get different tailwind classes depending on browser type
 
 ## Key Features
 

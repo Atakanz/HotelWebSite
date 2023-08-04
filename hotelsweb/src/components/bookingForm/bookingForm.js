@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {cities} from '../../data/cities';
+import {browserName} from 'react-device-detect';
 import * as Fa from 'react-icons/fa';
 
 const BookingForm = props => {
@@ -62,7 +63,12 @@ const BookingForm = props => {
           <div>
             <label className="formDivider">Şehir</label>
           </div>
-          <select className="selectCity">{cities.map(selectCity)}</select>
+          <select
+            className={`bg-white border border-stone-300 sm:p-0  md:w-full md:p-1 ${
+              browserName === 'Firefox' ? 'sm:w-32' : 'sm:w-[155px]'
+            }`}>
+            {cities.map(selectCity)}
+          </select>
         </div>
         <div className="formUnit">
           <label className="formDivider">Kişi sayısı</label>

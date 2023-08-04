@@ -4,14 +4,9 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      sm: '250px',
-      // => @media (min-width: 576px) { ... }
-
+      sm: '200px',
       md: '768px',
-      // => @media (min-width: 960px) { ... }
-
       lg: '1024px',
-      // => @media (min-width: 1440px) { ... }
     },
     container: {
       padding: {

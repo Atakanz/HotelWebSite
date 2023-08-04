@@ -4,7 +4,7 @@ import ContactInfo from '../../components/contactInfo/contactInfo';
 
 const Contacts = () => {
   return (
-    <div className="grid md:grid-cols-2 max-[768px]:my-12">
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:my-12">
       <ContactInfo />
       <ContactForm />
     </div>
